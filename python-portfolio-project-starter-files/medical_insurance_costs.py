@@ -25,10 +25,9 @@ with open('python-portfolio-project-starter-files\insurance.csv', 'r') as insura
 
 
 #Define goals:
-#Influential for an individual’s medical insurance charges
-#Which is the region with the most smokers
-#Which is the average cost for each region
-#Which is the average age on smokers 
+#Which is the average of bmi
+#Which is the average cost 
+#Which is the average age 
 
 def average_column(column):
     sum = 0
@@ -37,13 +36,15 @@ def average_column(column):
     total = sum / len(column)
     return total
 
-def create_dictionary(column1, column2):
-    dictionary =  {key:value for key, value in zip(column1, column2)}
-    return dictionary
+def create_dictionary(column1, column2,title1, title2):
+    dictionary_list={}
+    num_column = len(column1)
+    for i in range(num_column):
+        dictionary_list[i] = {title1: column1[i], title2: column2[i]}
+    return dictionary_list
 
-age_smokers = create_dictionary(smokers, ages)
-    
-print(average_column(charges))
+
+
     
 
     
