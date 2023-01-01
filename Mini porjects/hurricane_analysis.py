@@ -43,7 +43,7 @@ def convert_damages(damages):
 
 convert_damages(damages)
 
-'''Write a function that constructs a dictionary made out of the lists, where the keys of the dictionary are the names of the hurricanes,
+'''A function that constructs a dictionary made out of the lists, where the keys of the dictionary are the names of the hurricanes,
  and the values are dictionaries themselves containing a key for each piece of data (`Name`, `Month`, `Year`, `Max Sustained Wind`,
 `Areas Affected`, `Damage`, `Death`) about the hurricane.'''
 
