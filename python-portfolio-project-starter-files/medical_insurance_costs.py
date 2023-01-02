@@ -44,7 +44,9 @@ def create_dictionary(column1, column2,title1, title2):
     return dictionary_list
 
 
-
+print(round(average_column(ages),2))
+print(round(average_column(bmis),2))
+print(round(average_column(charges),2))
     
 
     
